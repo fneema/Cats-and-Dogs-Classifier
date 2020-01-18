@@ -4,7 +4,7 @@ from torchvision import transforms
 from torch.utils.data import DataLoader
 import torch.nn.functional as F
 from dataset import CatDogDataset
-from model import CNN
+from model import ConvNet
 
 
 
@@ -103,9 +103,9 @@ def test(model, perm=torch.arange(0, 224*224).long()):
 ##Train a ConvNet with the same number of parameters
 
 # Training settings 
-n_features = 6 # number of feature maps
+n_features = 8 # number of feature maps
 
-model_cnn = CNN(input_size, n_features, output_size)
+model_cnn = ConvNet(input_size, n_features, output_size)
 optimizer = optim.SGD(model_cnn.parameters(), lr=0.01, momentum=0.5)
 print('Number of parameters: {}'.format(get_n_params(model_cnn)))
 

@@ -2,9 +2,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-class CNN(nn.Module):
+class ConvNet(nn.Module):
     def __init__(self, input_size, n_feature, output_size):
-        super(CNN, self).__init__()
+        super(ConvNet, self).__init__()
         self.n_feature = n_feature
         self.conv1 = nn.Conv2d(in_channels=3, out_channels=n_feature, kernel_size=5)
         self.conv2 = nn.Conv2d(n_feature, 2*n_feature, kernel_size=5)
