@@ -5,7 +5,7 @@ The jupiter notebook shows how full connected layer neural network is implemente
 
 # How to run the code?
 1. Download the data from the link above and put it into a folder.
-2. Install the packages required in requirement.txt.
+2. Install the packages required in requirements.txt.
 3. Clone the repository: https://github.com/fneema/Cats-and-Dogs-classifier
 4. Run in the terminal python main.py.
 
